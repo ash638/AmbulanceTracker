@@ -1,11 +1,8 @@
 from django.contrib import admin
 from .models import Hospital
+from .models import Ambulance
 
-@admin.register(Hospital)
-
-class HospitalAdmin(admin.ModelAdmin):
-    list_display=['id','hospital_name','hospital_city','hospital_distance','hospital_rating']
-
+admin.site.register(Hospital)
+admin.site.register(Ambulance)
 
 
-# Register your models here.
